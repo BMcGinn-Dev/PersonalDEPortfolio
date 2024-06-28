@@ -1,0 +1,10 @@
+Flask
+flask-bootstrap
+flask-wtf
+flask-migrate
+flask-sqlalchemy
+boto3
+botocore
+Flask-Caching
+Flask-Login
+Flask-Mail
