@@ -8,6 +8,50 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Caveat:wght@500&display=swap"
         rel="stylesheet">
+
+    <!-- Styling for the Skill Boxes -->
+    <style>
+        .box-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .box {
+            width: 150px;
+            height: 150px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            text-align: center;
+            padding: 20px;
+            margin: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            background: linear-gradient(to bottom right, #d3d3d3, #b0e0e6);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .box img {
+            width: 55%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .box p {
+            font-weight: bold;
+        }
+    </style>
+
+
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         function toggleIframe() {
@@ -76,20 +120,61 @@
 
 
 
+        <!-- Courtney Section 
         <button class="mt-4 bg-indigo-500 text-white py-2 px-4 rounded" onclick="toggleIframe()">Expand to see me and my
             Wife :D </button>
 
         <div id="iframeContainer" class="hidden mt-4">
             <img src="static\images\Courtney.PNG" style="max-width: 700px; max-height: 700px;">
+        </div> -->
+
+        <!-- End Summary and Profile Pic -->
+
+
+
+        <!-- Timeline header-->
+        <div style="text-align: center; margin-top: 10px; margin-bottom: 6px;">
+            <h2 class="text-3xl font-bold text-indigo-500">Favorite Tools</h2>
         </div>
 
-        <!-- Summary and Profile Pic -->
+        <!-- ENTER Floating Skill Tree -->
+        <div class="box-container">
+            <div class="box">
+                <img src="static\images\PythonLogo.png" alt="Python Logo">
+                <p>Python</p>
+            </div>
+            <div class="box">
+                <img src="static\images\SQL Logo.png" alt="SQL Logo">
+                <p>SQL</p>
+            </div>
+            <div class="box">
+                <img src="static\images\AWS Logo.png" alt="AWS Logo">
+                <p>AWS</p>
+            </div>
+            <div class="box">
+                <img src="static\images\KafkaLogo.png" alt="Kafka Logo">
+                <p>Kafka</p>
+            </div>
+            <div class="box">
+                <img src="static\images\DataBricks logo.png" alt="Databricks Logo">
+                <p>Databricks</p>
+            </div>
+            <div class="box">
+                <img src="static\images\Apache Airflow.png" alt="Airflow Logo">
+                <p>Airflow</p>
+            </div>
+        </div>
+        <!-- END Floating Skill Tree -->
 
 
 
 
         <!-- ENTER TIMELINE -->
         <div class="-my-6" style="margin-top: 50px;">
+
+            <div style="text-align: left; margin-top: 10px; margin-bottom: 6px;">
+                <h2 class="text-3xl font-bold text-indigo-500" style="text-decoration: underline;">Career Timeline</h2>
+            </div>
 
             <!-- HCA Internship -->
             <div class="relative pl-8 sm:pl-32 py-6 group">
