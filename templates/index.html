@@ -575,7 +575,7 @@
             <!-- AWS DEA -->
             <div class="relative pl-8 sm:pl-32 py-6 group">
                 <!-- Purple label -->
-                <div class="font-caveat font-medium text-2xl text-indigo-500 mb-1 sm:mb-0">AWS Certified Data Engineer
+                <div class="font-caveat font-medium text-2xl text-indigo-500 mb-1 sm:mb-0">AWS Certified Data Engineer -
                     Associate</div>
                 <!-- Vertical line (::before) ~ Date ~ Title ~ Circle marker (::after) -->
                 <div
@@ -722,6 +722,55 @@
                                     Your browser does not support the video tag.
                                 </video>
                             </div>
+                        </div>
+
+
+
+
+
+
+                    </div>
+                </li>
+
+
+
+                <!-- Another Project -->
+                <li class="bg-gray-700 p-4 rounded shadow">
+                    <button onclick="toggleDetails(this)" class="w-full text-left flex items-center justify-between">
+                        <div>
+                            <h3 class="text-lg font-bold" style="color: rgb(94, 173, 199);">
+                                McDonald's "McVoice" Survey Auto-Completion
+                            </h3>
+                            <a href="https://github.com/BMcGinn-Dev/McVoiceFullNative" target="_blank"
+                                rel="noopener noreferrer" class="text-sm text-lightblue">
+                                View Code on GitHub
+                            </a>
+                        </div>
+                        <span class="text-white">&#9662;</span> <!-- Down arrow -->
+                    </button>
+                    <div class="mt-4 hidden">
+                        <p style="color: white;">Whenever you receive a receipt from McDonald's, a code is provided at the top of the receipt that encourages you to 
+                            take a survey. If you complete this survey, you are giving a 6 digit code which you can use next time you order from McDonald's to get a
+                            Buy-One-Get-One any sandwich. I was tired of completing this survey so I wrote this locally ran site that completes it for me. All you need to do
+                            is upload a photo of the reciept & this site uses OCR to extract the code, complete the survey, and return to you the BOGO code. <br> <br> I have written 
+                            integrations with AWS S3 and Lambda for processing, however fun to integrate, there was no sense when I would just run locally. <br> <br>
+
+                        </p>
+
+                        <div style="display: flex; align-items: flex-start; gap: 16px;">
+                            <!-- Link with Image -->
+                            <a 
+                                target="_blank" rel="noopener noreferrer" style="flex: 7;">
+                                <img src="static\images\McVoice Proccess UI.png" alt="McDonaldsReceipt"
+                                    style="width: 100%; height: auto; border-radius: 7px;">
+                            </a>
+
+                            <!-- Link with Image -->
+                            <a 
+                                target="_blank" rel="noopener noreferrer" style="flex: 7;">
+                                <img src="static\images\McDonaldsReceipt.png" alt="McDonaldsReceipt"
+                                    style="width: 100%; height: auto; border-radius: 7px;">
+                            </a>
                         </div>
 
 
